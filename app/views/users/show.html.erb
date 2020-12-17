@@ -1,0 +1,41 @@
+<main role="main">
+  <%= render 'header', user: @user %>
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div id="taught_courses" class="card parent">
+        <div class="card-header bg-primary"><%= t('views.users.taught_courses') %></div>
+        <% if @taught_courses.present? %>
+          <%= render 'courses', courses: @taught_courses %>
+        <% else %>
+          <div class="card bg-light child">
+            <div class="card-body">
+              <p class="card-text"><%= t('views.users.taught_no_course') %></p>
+            </div>
+          </div>
+        <% end %>
+        <% if owner?(@user.id) %>
+          <%= link_to t('button.new', resource: humanize(Course)),
+                      new_user_course_path(@user),
+                      class: "btn btn-lg btn-outline-success btn-bottom" %>
+        <% end %>
+      </div>
+      <div id="enrolled_courses" class="card parent">
+        <div class="card-header bg-info"><%= t('views.users.enrolled_courses') %></div>
+        <% if @enrolled_courses.present? %>
+          <%= render 'courses', courses: @enrolled_courses %>
+        <% else %>
+          <div class="card bg-light child">
+            <div class="card-body">
+              <p class="card-text"><%= t('views.users.enrolled_no_course') %></p>
+            </div>
+          </div>
+        <% end %>
+        <% if owner?(@user.id) %>
+          <%= link_to t('views.users.enroll_new_course'),
+                      courses_path,
+                      class: "btn btn-lg btn-outline-success btn-bottom" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</main>

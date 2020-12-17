@@ -1,0 +1,58 @@
+<!-- TODO: Implement Nested Comments-->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8">
+      <h1 class="mt-4"><%= @course.title %></h1>
+      <p class="lead">
+        by
+        <a href="#"><%= link_to @course.author.full_name, user_path(@course.author_id) %></a>
+      </p>
+      <hr>
+      <p>Posted on <%= date_parses(@course.created_at) %></p>
+      <hr>
+      <% if enrolled_courses?(@course.id) %> 
+          <strong>
+            <%= link_to t('button.unenroll'),
+                          unenroll_user_course_path( current_user.id, @course.id),
+                          class: 'btn btn-primary btn-md',
+                          method: :delete %>
+          </strong>
+        <% elsif !owner?(@course.author_id) %>
+          <strong>
+            <%= link_to t('button.enroll'),
+                          enroll_user_course_path( current_user.id, @course.id),
+                          class: 'btn btn-primary btn-md',
+                          method: :post %>
+          </strong>
+      <% end %>
+      <hr>
+      <p class="lead"><%= @course.content %> </p>
+      <div class="card my-4">
+        <h5 class="card-header bg-info">Leave a Comment:</h5>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+      <!-- Comment with nested comments -->
+      <div class="media mb-4">
+        <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+        <div class="media-body">
+          <h5 class="mt-0">Commenter Name</h5>
+          Cras sit amet nibh libero, in gravida nulla. 
+          <div class="media mt-4">
+            <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+            <div class="media-body">
+              <h5 class="mt-0">Commenter Name</h5>
+              Cras sit amet nibh libero, in gravida nulla. 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
