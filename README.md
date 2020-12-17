@@ -1,11 +1,19 @@
-# ELearning System 2020
+# ELearning System
 ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?&style=for-the-badge&logo=ruby&logoColor=white)
 ![Rails](https://img.shields.io/badge/rails%20-%23CC0000.svg?&style=for-the-badge&logo=ruby-on-rails&logoColor=white)
 ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?&style=for-the-badge&logo=postgresql&logoColor=white)
 
-This is a practice project for learning Ruby On Rails.
+This is a practice project for learning Ruby On Rails. If you are new to rails, you can study this project to get familiar with rails quickly.
 
-In this system, user can create courses and enroll to other user courses.
+In this system, a user can create courses and enroll to other user courses.
+
+## ✨ Features
+
+- Signup new accounts
+- Create Comments
+- Enroll, unenroll to other user courses
+- See a list of users
+- Create, edit , delete categories as an admin
 
 **Screenshots**
 
@@ -16,7 +24,7 @@ In this system, user can create courses and enroll to other user courses.
   <img src="public/images/categories.png" width="200">
 </p>
 
-## ER Diagram
+## 🪧 ER Diagram
 
 Entity Relationship Diagram of the project models.
 
@@ -27,7 +35,7 @@ Entity Relationship Diagram of the project models.
   <p>( Generated with <a href="https://github.com/voormedia/rails-erd">rails-erd</a> gem )</p>
 </div>
 
-## Run the Project in Development
+## 🛠️ Run the Project in Development
 
 First we need to setup the Rails environemnt in our system. If you have already setup rails environment, please move to the next section.
 
@@ -43,14 +51,13 @@ Details guide to setup rails environemnt can be found here: https://gorails.com/
 
 **Clone the Project**
 
-After finishing the environemnt setup, we need to clone the project locally.
-To clone the project, run the following command from terminal
+Clone the project using any of the two method. 
 
 ```bash
 git clone https://github.com/wtag/juniors-practice-with-github.git
 ```
 
-or
+or if you have setup github ssh
 
 ```bash
 git clone git@github.com:wtag/juniors-practice-with-github.git
@@ -66,15 +73,12 @@ After that, run the following commands from project root directory to get up and
 4. `rails db:seed`
 5. `rails server`
 
+🌟 You are all set!
+
 Visit: [http://localhost:3000/](http://localhost:3000/)
 
-## Rule Set for PR Reviews
 
-A list of useful rules curated from PR reviews is complied into the following doc. 
-
-[Rule Set for PR Reviews](https://docs.google.com/document/d/1aNOftLWfLr3OdiQLImKY9cJMXqONdHsoRHJ5v34ku0I/edit)
-
-## Commonly Used Rails Commands
+## 🔰 Commonly Used Rails Commands
 
 - Create New Rails App: `rails new myapp -d postgresql`
 - Create Database: `rails db:create`
@@ -92,7 +96,7 @@ A list of useful rules curated from PR reviews is complied into the following do
 - Reset seed: `rails db:seed:replant`
 - Rails Databse Console: `rails dbconsole`
 
-## Useful Resources
+## 💡 Useful Resources
 
 - [Ruby API](https://rubyapi.org/)
 - [Rails API](https://api.rubyonrails.org/)
@@ -102,3 +106,29 @@ A list of useful rules curated from PR reviews is complied into the following do
 - [Rails Style Guide](https://github.com/rubocop-hq/rails-style-guide)
 - [Awesome Rails](https://github.com/gramantin/awesome-rails#readme)
 - [Ruby on Rails Design Patterns](https://codeclimate.com/blog/7-ways-to-decompose-fat-activerecord-models/)
+## 🍰 Contributors
+
+- [Imam Hossain](https://github.com/Santho07)
+- [Shuvra Debnath](https://github.com/shuvra-mbstu)
+
+## 🙇 Special Thanks
+
+- Farzana Haque
+- Avik Chowdhury
+- Maliha Rahman
+
+For guiding us throughout the project.
+
+## 💎 Contributing
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+Feel free to add new feature or improve the codebase by opening pull requests.
+
+## ©️ License
+
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+
+Copyright &copy; 2020
+
+<hr>
+

@@ -66,10 +66,10 @@ en:
       content: 'Content of the %{resource} : '
       course_header: Listing Courses
       credit_hours: 'Credit hours of the %{resource} : '
-      login_title: Login to eLearning
+      login_title: Login to Elearning System
       new: New %{resource}
       profile: Profile
-      signup_title: Sign up for eLearning
+      signup_title: Sign up for Elearning System
       title: 'Title of the %{resource} : '
     users:
       courses:
@@ -89,4 +89,4 @@ en:
       explore_courses: Explore Courses
       join_us: Join us today for free to learn and tech.
       taught_count: 'Taught so far: %{count} %{course}.'
-      title: Welcome to eLearning System!
+      title: Welcome to Elearning System
