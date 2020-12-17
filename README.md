@@ -31,13 +31,13 @@ Entity Relationship Diagram of the project models.
 <div align="center">
   <img src="public/images/erd.png" alt="ELearning System ERD">
 
-  <p>Elearning System 2020 ERD</p>
+  <p>Elearning System ERD</p>
   <p>( Generated with <a href="https://github.com/voormedia/rails-erd">rails-erd</a> gem )</p>
 </div>
 
 ## 🛠️ Run the Project in Development
 
-First we need to setup the Rails environemnt in our system. If you have already setup rails environment, please move to the next section.
+First we need to setup Rails environemnt in our system. If you have already setup rails environment, please move to the next section.
 
 **Steps to setup Rails environemnt:**
 
@@ -51,7 +51,7 @@ Details guide to setup rails environemnt can be found here: https://gorails.com/
 
 **Clone the Project**
 
-Clone the project using any of the two method. 
+Clone the project using any of the available command. 
 
 ```bash
 git clone https://github.com/wtag/juniors-practice-with-github.git
