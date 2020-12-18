@@ -7,6 +7,8 @@ This is a practice project for learning Ruby On Rails. If you are new to rails, 
 
 In this system, a user can create courses and enroll to other user courses.
 
+LIVE LINK: [https://simp-elearning.herokuapp.com](https://simp-elearning.herokuapp.com/)
+
 ## ✨ Features
 
 - Sign-up new accounts
