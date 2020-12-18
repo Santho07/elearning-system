@@ -9,20 +9,20 @@ In this system, a user can create courses and enroll to other user courses.
 
 ## ✨ Features
 
-- Signup new accounts
-- Create Comments
+- Sign-up new accounts
+- Create courses
 - Enroll, unenroll to other user courses
-- See a list of users
+- Commenting feature ( upcoming )
 - Create, edit , delete categories as an admin
 
 **Topics Covered**
 
-- Rails MVC
-- ActiveRecord Associations 
+- [Rails MVC](https://guides.rubyonrails.org/getting_started.html)
+- [Active Record Associations ](https://guides.rubyonrails.org/association_basics.html)
   ( one-to-one, many-to-many, one-to-many, polymorphic )
 - Authentication built from scratch
-- Admin Authorization
-- Pagination
+- RSpec Unit Tests
+- Internationalization using [I18n](https://guides.rubyonrails.org/i18n.html)
 - JavaScript, AJAX
 
 **Screenshots**
@@ -41,36 +41,36 @@ Entity Relationship Diagram of the project models.
 <div align="center">
   <img src="public/images/erd.png" alt="ELearning System ERD">
 
-  <p>Elearning System ERD</p>
+  <p>ELearning System ERD</p>
   <p>( Generated with <a href="https://github.com/voormedia/rails-erd">rails-erd</a> gem )</p>
 </div>
 
 ## 🛠️ Run the Project in Development
 
-First we need to setup Rails environemnt in our system. If you have already setup rails environment, please move to the next section.
+First we need to setup Rails environment in our system. If you have already setup rails environment, please move to the next section.
 
-**Steps to setup Rails environemnt:**
+**Steps to setup Rails environment:**
 
 1. Install Ruby
 1. Install Ruby Package Manager ( [rbenv](https://github.com/rbenv/rbenv) (preferred) / rvm )
 2. Install Bundler 
-3. Setup Postgres SQL Database
+3. Setup PostgreSQL Database
 4. Setup Git 
 
-Details guide to setup rails environemnt can be found here: https://gorails.com/setup
+Details guide to setup rails environment can be found here: https://gorails.com/setup
 
 **Clone the Project**
 
 Clone the project using any of the available command. 
 
 ```bash
-git clone https://github.com/wtag/juniors-practice-with-github.git
+git clone https://github.com/Santho07/elearning-system.git
 ```
 
 or if you have setup github ssh
 
 ```bash
-git clone git@github.com:wtag/juniors-practice-with-github.git
+git clone git@github.com:Santho07/elearning-system.git
 ```
 
 After that, run the following commands from project root directory to get up and running.
@@ -87,6 +87,10 @@ After that, run the following commands from project root directory to get up and
 
 Visit: [http://localhost:3000/](http://localhost:3000/)
 
+**Login with Credentials**
+
+email: `admin@gmail.com` <br>
+password: `secret`
 
 ## 🔰 Commonly Used Rails Commands
 
@@ -98,13 +102,13 @@ Visit: [http://localhost:3000/](http://localhost:3000/)
 - Run Server With Port: `rails server --port <portNumber>`
 - See Rails Routes: `rails routes`
 - Rails Console: `rails c`
-- Drop Databse: `rails db:drop`
+- Drop Database: `rails db:drop`
 - Reset Database: `rails db:reset`
 - Load Structure SQL: `rails db:structure:load`
-- Rollback last migration: `rails db:rollback`
-- Run Rspec: `rspec spec`
-- Reset seed: `rails db:seed:replant`
-- Rails Databse Console: `rails dbconsole`
+- Rollback Last Migration: `rails db:rollback`
+- Run RSpec: `rspec spec`
+- Reset Seed: `rails db:seed:replant`
+- Rails Database Console: `rails dbconsole`
 
 ## 💡 Useful Resources
 
@@ -141,4 +145,3 @@ Feel free to add new feature or improve the codebase by opening pull requests. P
 Copyright &copy; 2020
 
 <hr>
-
