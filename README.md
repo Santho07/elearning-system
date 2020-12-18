@@ -15,6 +15,16 @@ In this system, a user can create courses and enroll to other user courses.
 - See a list of users
 - Create, edit , delete categories as an admin
 
+**Topics Covered**
+
+- Rails MVC
+- ActiveRecord Associations 
+  ( one-to-one, many-to-many, one-to-many, polymorphic )
+- Authentication built from scratch
+- Admin Authorization
+- Pagination
+- JavaScript, AJAX
+
 **Screenshots**
 
 <p float="left" align="center">
@@ -113,16 +123,16 @@ Visit: [http://localhost:3000/](http://localhost:3000/)
 
 ## 🙇 Special Thanks
 
-- Farzana Haque
-- Avik Chowdhury
-- Maliha Rahman
+- Farzana Haque Apu
+- Avik Chowdhury Vaia
+- Maliha Rahman Apu
 
-For guiding us throughout the project.
+For the amazing support, guidance and PR reviews throughout the project.
 
 ## 💎 Contributing
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-Feel free to add new feature or improve the codebase by opening pull requests.
+Feel free to add new feature or improve the codebase by opening pull requests. Please add `Rspec` tests for any new changes.
 
 ## ©️ License
 
